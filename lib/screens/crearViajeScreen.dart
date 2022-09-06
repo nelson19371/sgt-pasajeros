@@ -139,7 +139,10 @@ class crearViajeScreen extends StatelessWidget {
                     
                     width: double.infinity,
                     
-                    child: Center(child:  Text('Iniciar Viaje',style: TextStyle(fontSize: 25)))
+                    child: Center(child:  Padding(
+                      padding: EdgeInsets.all(9.0),
+                      child: Text('Iniciar Viaje',style: TextStyle(fontSize: 25)),
+                    ))
                     
                     
                     ),

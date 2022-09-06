@@ -109,11 +109,11 @@ class Page2 extends StatelessWidget {
         children: [
           const SizedBox(height: 90),
           const Text('LOGIN',style: TextStyle(fontSize: 60),),
-          const SizedBox(height: 120),
+          const SizedBox(height: 50),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 40),
             child: TextField(
-              obscureText: true,
+              obscureText: false,
               decoration: InputDecoration(
     border: OutlineInputBorder(),
     labelText: 'Correo',
@@ -133,7 +133,7 @@ class Page2 extends StatelessWidget {
             ),
             
           ),
-           const SizedBox(height: 90),
+           const SizedBox(height: 10),
           Center(
             child: TextButton(
               onPressed: (){
