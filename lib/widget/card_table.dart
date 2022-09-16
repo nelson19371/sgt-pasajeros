@@ -16,13 +16,13 @@ class CardTable extends StatelessWidget {
     return Table(
       children: const [
          TableRow(children: [
-          _SigleCard(text: 'Generar Reserva',direccion: crearViajeScreen(),),
+          _SigleCard(text: 'Generar Servicio',direccion: crearViajeScreen(),),
           
 
         ],
         ),
          TableRow(children: [
-          _SigleCard(text: 'Consulta General',direccion: HomeScreen(),),
+          _SigleCard(text: 'Consultar Viaje',direccion: HomeScreen(),),
           
 
         ],

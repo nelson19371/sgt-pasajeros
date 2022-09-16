@@ -12,7 +12,7 @@ class crearViajeScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-
+  
     final GlobalKey<FormState> myFormKey = GlobalKey<FormState>();
 
   // lista de datos que se envia con el formulario
@@ -46,9 +46,9 @@ class crearViajeScreen extends StatelessWidget {
                 const SizedBox(height: 10),
                 DropdownButtonFormField<String>(
                
-                value: 'subida',
+                value: 'Orientación',
                 items: const [
-
+                   DropdownMenuItem(value: 'Orientación', child: Text('Orientación'),),
                   DropdownMenuItem(value: 'subida', child: Text('SUBIDA'),),
                   DropdownMenuItem(value: 'bajada', child: Text('BAJADA'),)
                   
@@ -64,9 +64,9 @@ class crearViajeScreen extends StatelessWidget {
                const SizedBox(height: 30), 
                DropdownButtonFormField<String>(
                
-                value: '7000-terminal',
+                value: 'Servicio',
                 items: const [
-
+                   DropdownMenuItem(value: 'Servicio', child: Text('Servicio'),),
                   DropdownMenuItem(value: '7000-terminal', child: Text('7000-TERMINAL'),),
                   DropdownMenuItem(value: 'terminal-vsl', child: Text('TERMINAL-VSL'),),
                    DropdownMenuItem(value: 'vca-complejo', child: Text('VCA-COMPLEJO'),)
@@ -83,9 +83,9 @@ class crearViajeScreen extends StatelessWidget {
                const SizedBox(height: 30),
                DropdownButtonFormField<String>(
                
-                value: 'aeropuerto-1',
+                value: 'Bus',
                 items: const [
-
+                  DropdownMenuItem(value: 'Bus', child: Text('Bus'),),
                   DropdownMenuItem(value: 'aeropuerto-1', child: Text('AEROPUERTO 1'),),
                   DropdownMenuItem(value: 'aeropuerto-2', child: Text('AEROPUERTO 2'),),
                    DropdownMenuItem(value:'aeropuerto-3', child: Text('AEROPUERTO 3'),)
@@ -101,10 +101,10 @@ class crearViajeScreen extends StatelessWidget {
                ),
                 const SizedBox(height: 30),
                DropdownButtonFormField<String>(
-               
-                value: '3:00',
+                
+                value: 'Hora',
                 items: const [
-
+                   DropdownMenuItem(value: 'Hora', child: Text('Hora'),),
                   DropdownMenuItem(value: '3:00', child: Text('3:00'),),
                   DropdownMenuItem(value: '3:30', child: Text('3:30'),),
                    DropdownMenuItem(value: '6:00', child: Text('6:00'),)

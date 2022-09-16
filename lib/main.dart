@@ -1,5 +1,6 @@
 
 import 'package:estilos_flutter/screens/home_screen.dart';
+import 'package:estilos_flutter/screens/lista.dart';
 import 'package:estilos_flutter/screens/scroll_design.dart';
 import 'package:flutter/material.dart';
 import 'package:estilos_flutter/theme/app_theme.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         
         'scroll_screen': (_) => const ScrollScreen(),
         'home_screen' :(_) =>const HomeScreen(),
+        'lista' :(_) =>  lista()
       },
      
       

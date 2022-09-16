@@ -3,6 +3,7 @@
 
 // ignore_for_file: file_names
 
+import 'package:estilos_flutter/screens/lista.dart';
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
@@ -20,13 +21,13 @@ class informesScreen extends StatelessWidget {
         title: const Text('Informe de pasajeros'),
                   actions: [
             IconButton(icon: const Icon(Icons.search_outlined), onPressed: () {
+        IconButton(icon: const Icon(Icons.print), onPressed: () {
 
                 
-            }),
-             IconButton(icon: const Icon(Icons.print), onPressed: () {
-
+            });
                 
             }),
+            
           ],
       ),
       body: Padding(
@@ -54,6 +55,7 @@ class informesScreen extends StatelessWidget {
                       
                   ),
                   ),
+                  
                   const SizedBox(height: 10,),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
@@ -64,25 +66,44 @@ class informesScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Text('______________________________________________________________'),
-                  const SizedBox(height: 15),
-                  const Text(' Orientación: SUBIDA Servicio:Terminal-VSL Bus:Complejo1',style: TextStyle(fontSize: 15),),
-                  const Text('______________________________________________________________'),
-                  const SizedBox(height: 10,),
-                   const Text('    N°Bus              Rut                     Nombre Completo                 Asiento',style: TextStyle(fontSize: 12),),
-                  const Text('______________________________________________________________'),
-                  const SizedBox(height: 12,),
-                   Text('    3517                    19.37                          Nelson Sandoval                              3',style: _style),
-                   const Text('______________________________________________________________'),
-                    const SizedBox(height: 12,),
-                   Text('    3517                    19.37                          Nelson Sandoval                              4',style: _style),
-                   const Text('______________________________________________________________'),
-                    const SizedBox(height: 12,),
-                   Text('    3517                    19.37                          Nelson Sandoval                              5',style: _style),
-                   const Text('______________________________________________________________'),
-                    const SizedBox(height: 12,),
-                   Text('    3517                    19.37                          Nelson Sandoval                              6',style: _style),
-                   const Text('______________________________________________________________'),
+                  const SizedBox(height: 50,),
+                  Center(
+            child: TextButton(
+              onPressed: (){
+                Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) =>  lista()),
+  );
+              },
+              style: TextButton.styleFrom(backgroundColor:Color.fromARGB(255, 238, 193, 16),
+              shape: const StadiumBorder() ),
+              child:  const Padding(
+                padding:  EdgeInsets.symmetric(horizontal: 40),
+                child: Text('Buscar ', style: TextStyle(color: Colors.white,fontSize: 30),),
+                
+              ),
+              ),
+          ),
+          const SizedBox(height: 10,),
+                  // const Text('______________________________________________________________'),
+                  // const SizedBox(height: 15),
+                  // const Text(' Orientación: SUBIDA Servicio:Terminal-VSL Bus:Complejo1',style: TextStyle(fontSize: 15),),
+                  // const Text('______________________________________________________________'),
+                  // const SizedBox(height: 10,),
+                  //  const Text('    N°Bus              Rut                     Nombre Completo                 Asiento',style: TextStyle(fontSize: 12),),
+                  // const Text('______________________________________________________________'),
+                  // const SizedBox(height: 12,),
+                  //  Text('    3517                    19.37                          Nelson Sandoval                              3',style: _style),
+                  //  const Text('______________________________________________________________'),
+                  //   const SizedBox(height: 12,),
+                  //  Text('    3517                    19.37                          Nelson Sandoval                              4',style: _style),
+                  //  const Text('______________________________________________________________'),
+                  //   const SizedBox(height: 12,),
+                  //  Text('    3517                    19.37                          Nelson Sandoval                              5',style: _style),
+                  //  const Text('______________________________________________________________'),
+                  //   const SizedBox(height: 12,),
+                  //  Text('    3517                    19.37                          Nelson Sandoval                              6',style: _style),
+                  //  const Text('______________________________________________________________'),
                   
                 ]
         ),

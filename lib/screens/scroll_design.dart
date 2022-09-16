@@ -61,7 +61,7 @@ class MainContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var textStyle = const TextStyle(fontSize: 50,fontWeight: FontWeight.bold, color: Colors.black,);
+    var textStyle = const TextStyle(fontSize: 50,fontWeight: FontWeight.bold, color: Color.fromARGB(255, 243, 158, 0),);
     return SafeArea(
 
       bottom: false,
@@ -72,8 +72,13 @@ class MainContent extends StatelessWidget {
           const SizedBox(height: 30,),
           
           Text('Bienvenido',style: textStyle,),
+          const SizedBox(height: 420,),
+          
+           Text('Desliza para continuar',style: TextStyle(fontSize: 25, color: Colors.white,fontWeight: FontWeight.bold,),),
+          
           Expanded(child: Container(),),
-          const Icon(Icons.keyboard_arrow_down, size: 100,color: Colors.white,)
+          const Icon(Icons.keyboard_arrow_down, size: 100,color: Colors.white,),
+         
         ],
       ),
     );
@@ -108,7 +113,7 @@ class Page2 extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: 90),
-          const Text('LOGIN',style: TextStyle(fontSize: 60),),
+          const Text('Inicio',style: TextStyle(fontSize: 60),),
           const SizedBox(height: 50),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 40),
@@ -147,6 +152,7 @@ class Page2 extends StatelessWidget {
               child:  const Padding(
                 padding:  EdgeInsets.symmetric(horizontal: 40),
                 child: Text('Ingresar', style: TextStyle(color: Colors.white,fontSize: 30),),
+                
               ),
               ),
           ),
